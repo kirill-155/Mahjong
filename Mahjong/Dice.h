@@ -75,6 +75,11 @@ public:
         radius = rs;
     }
 
+    bool is_click(Vector2f pos) {
+        Vector2f pos2 = getPosition();
+        return pos.x >= pos2.x && pos.y >= pos2.y && pos.x < pos2.x + WidthDice && pos.y < pos2.y + HeightDice;
+    }
+
     virtual size_t getPointCount() const { return m.size(); }
     virtual Vector2f getPoint(size_t i) const { return m[i]; }
 };

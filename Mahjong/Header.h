@@ -13,6 +13,7 @@ using std::vector;
 using std::to_string;
 using std::getline;
 using std::cin;
+using std::pair;
 using std::ifstream;
 
 const int WidthWin = 1600;
