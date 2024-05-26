@@ -138,6 +138,7 @@
     <ClInclude Include="Dice.h" />
     <ClInclude Include="Header.h" />
     <ClInclude Include="Screensaver.h" />
+    <ClInclude Include="Update.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Image\заставка.jpg" />

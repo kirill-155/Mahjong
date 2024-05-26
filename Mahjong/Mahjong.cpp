@@ -1,5 +1,7 @@
 ﻿#include "Header.h"
 #include "Screensaver.h"
+#include "Create.h"
+#include "Update.h"
 
 void Event_click(RenderWindow& window) {
     Event event;
@@ -21,18 +23,24 @@ void Drow(RenderWindow& window) {
     sf::Sprite sprite;
     sprite.setTexture(texture);
     window.draw(sprite);
-
+    //Create(window);
+    Update(window);
 }
 
 int main()
 {
-    //Screensaver();
-    RenderWindow window(VideoMode(WidthWin, HeightWin), L"Mahjong", Style::Default);
+    system("chcp 1251 > nul");
+    sf::ContextSettings settings;
+    settings.antialiasingLevel = 8;
+    RenderWindow window(VideoMode(WidthWin, HeightWin), L"Mahjong", Style::Default, settings);
     window.setPosition({ 200,100 });
     window.setVerticalSyncEnabled(true);
 
+    Create(window);
     while (window.isOpen())
     {
+        //system("pause");
+
         // очищаем окно чёрным цветом
         window.clear(sf::Color::Black);
 

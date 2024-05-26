@@ -32,6 +32,9 @@
     <ClInclude Include="Create.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
+    <ClInclude Include="Update.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Image\заставка.jpg">

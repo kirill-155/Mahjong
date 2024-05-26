@@ -3,10 +3,47 @@
 #include "Header.h"
 #include "Dice.h"
 
-using std::ifstream;
+void getTextureDice() {
+	vector<string> Names;
+	ifstream in("Image/Name.txt");
+	if(in.is_open())
+		while (!in.eof())
+		{
+			string Name;
+			in >> Name;
+			Names.push_back(Name);
+		}
+	in.close();
 
-void Create(int map = 1) {
-	ifstream in("Map/" + to_string(map));
-	vector<Dice> V_dice;
+	textures.resize(Names.size());
+	for (int i = 0; i < Names.size(); i++)
+	{
+		textures[i].loadFromFile("Image/Кости_белые/" + Names[i] + ".png");
+		textures[i].setSmooth(true);
+	}
+}
+
+void Create(RenderWindow& window, int map = 1) {
+	srand(time(0));
+	getTextureDice();
+	ifstream in("Map/" + to_string(map) + ".txt");
+	if(in.is_open())
+	while (!in.eof())
+	{
+		Vector2f pos;
+		in >> pos.x >> pos.y;
+		int level, cnt;
+		in >> level >> cnt;
+		for (int i = 0; i < cnt; i++)
+		{
+			Dice dice;
+			pos.x++;
+			dice.setPosition(pos.x * WidthDice - level * ShiftLevel + ShiftWidth, pos.y * HeightDice - level * ShiftLevel);
+			dice.IdName = rand() % textures.size();
+			dice.setTexture(&textures[dice.IdName]);
+			V_dice.push_back(dice);
+		}
+	}
+	in.close();
 
 }
