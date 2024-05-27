@@ -83,3 +83,11 @@ public:
     virtual size_t getPointCount() const { return m.size(); }
     virtual Vector2f getPoint(size_t i) const { return m[i]; }
 };
+
+void swap(Dice& a, Dice& b) {
+    int IdName = a.IdName;
+    a.setTexture(&textures[b.IdName]);
+    a.IdName = b.IdName;
+    b.setTexture(&textures[IdName]);
+    b.IdName = IdName;
+}

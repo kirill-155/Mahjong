@@ -27,6 +27,7 @@ void Create(RenderWindow& window, int map = 1) {
 	srand(time(0));
 	getTextureDice();
 	ifstream in("Map/" + to_string(map) + ".txt");
+	bool f = 0;
 	if(in.is_open())
 	while (!in.eof())
 	{
@@ -39,11 +40,18 @@ void Create(RenderWindow& window, int map = 1) {
 			Dice dice;
 			pos.x++;
 			dice.setPosition(pos.x * WidthDice - level * ShiftLevel + ShiftWidth, pos.y * HeightDice - level * ShiftLevel);
-			dice.IdName = rand() % textures.size();
+			if (f)
+				dice.IdName = V_dice[V_dice.size() - 1].IdName;
+			else
+				dice.IdName = rand() % textures.size();
+			f = !f;
 			dice.setTexture(&textures[dice.IdName]);
 			V_dice.push_back(dice);
 		}
 	}
 	in.close();
-
+	for (int i = 0; i < V_dice.size(); i++)
+	{
+		swap(V_dice[i], V_dice[rand() % V_dice.size()]);
+	}
 }
