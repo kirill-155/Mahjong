@@ -1,15 +1,25 @@
 ﻿  Mahjong.cpp
 C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Dice.h(17,39): warning C4305: инициализация: усечение из "double" в "float"
 C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Create.h(27,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Create.h(42,93): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
-C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Create.h(42,60): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
-C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Mahjong.cpp(17,24): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Mahjong.cpp(19,87): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Create.h(43,131): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Create.h(43,79): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Mahjong.cpp(40,119): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Mahjong.cpp(19,66): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Mahjong.cpp(42,119): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Mahjong.cpp(59,24): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Mahjong.cpp(61,87): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Mahjong.cpp(61,66): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
           with
           [
               T=float

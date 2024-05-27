@@ -39,13 +39,15 @@ void Create(RenderWindow& window, int map = 1) {
 		{
 			Dice dice;
 			pos.x++;
-			dice.setPosition(pos.x * WidthDice - level * ShiftLevel + ShiftWidth, pos.y * HeightDice - level * ShiftLevel);
+			dice.level = level;
+			dice.setPosition(pos.x * (WidthDice - ShiftLevel + 1) - level * ShiftLevel + ShiftWidth, pos.y * (HeightDice - ShiftLevel + 1) - level * ShiftLevel);
 			if (f)
 				dice.IdName = V_dice[V_dice.size() - 1].IdName;
 			else
 				dice.IdName = rand() % textures.size();
 			f = !f;
 			dice.setTexture(&textures[dice.IdName]);
+			dice.setFillColor(Color(240, 240, 240));
 			V_dice.push_back(dice);
 		}
 	}

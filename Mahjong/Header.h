@@ -21,7 +21,7 @@ const int HeightWin = 800;
 
 const int WidthDice = 64;
 const int HeightDice = 84;
-const double ShiftLevel = 10;
+const double ShiftLevel = 4;
 const double ShiftWidth = 300;
 
 class Dice;

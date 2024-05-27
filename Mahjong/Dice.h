@@ -49,6 +49,7 @@ private:
 
 public:
     int IdName;
+    int level;
 
     Dice(const Rect<float> rt, const float rs) : rect(rt), radius(rs) {
         init();
@@ -75,9 +76,9 @@ public:
         radius = rs;
     }
 
-    bool is_click(Vector2f pos) {
+    bool is_click(Vector2f pos, double inaccuracy = 0) {
         Vector2f pos2 = getPosition();
-        return pos.x >= pos2.x && pos.y >= pos2.y && pos.x < pos2.x + WidthDice && pos.y < pos2.y + HeightDice;
+        return pos.x >= pos2.x - inaccuracy && pos.y >= pos2.y - inaccuracy && pos.x < pos2.x + WidthDice + inaccuracy && pos.y < pos2.y + HeightDice + inaccuracy;
     }
 
     virtual size_t getPointCount() const { return m.size(); }
