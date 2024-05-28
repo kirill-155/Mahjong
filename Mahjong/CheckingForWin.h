@@ -2,7 +2,7 @@
 #include "Header.h"
 #include "Dice.h"
 
-bool is_block(int IdV_dice) {
+bool is_block(int IdV_dice) { // проверка на блокирование кости
     Vector2f pos = V_dice[IdV_dice].getPosition();
     pos.x += WidthDice / 2.0;
     pos.y += HeightDice / 2.0;
@@ -10,7 +10,7 @@ bool is_block(int IdV_dice) {
     bool left = 1, rigt = 1;
     for (int i = 0; i < V_dice.size(); i++)
     {
-        if (V_dice[i].level - 1 == V_dice[IdV_dice].level && V_dice[i].is_click(Vector2f(pos.x, pos.y), 15))
+        if (V_dice[i].level - 1 == V_dice[IdV_dice].level && V_dice[i].is_click(Vector2f(pos.x, pos.y), 15)) // если на данной кости лежит другая
             return true;
         if (left && V_dice[i].level == V_dice[IdV_dice].level && V_dice[i].is_click(Vector2f(pos.x + WidthDice, pos.y + ShiftLevel), 5))
             left = 0;
@@ -22,7 +22,7 @@ bool is_block(int IdV_dice) {
     return true;
 }
 
-bool CheckingForWin() {
+bool CheckingForWin() { // проверка на возможность ходить
     for (int i = 0; i < V_dice.size(); i++)
     {
         if(!is_block(i))

@@ -48,8 +48,8 @@ private:
     }
 
 public:
-    int IdName;
-    int level;
+    int IdName;// идентификатор текстуры
+    int level;// уровень расположения кости
 
     Dice(const Rect<float> rt, const float rs) : rect(rt), radius(rs) {
         init();
@@ -76,7 +76,7 @@ public:
         radius = rs;
     }
 
-    bool is_click(Vector2f pos, double inaccuracy = 0) {
+    bool is_click(Vector2f pos, double inaccuracy = 0) { // проверка на попадание в область кости
         Vector2f pos2 = getPosition();
         return pos.x >= pos2.x - inaccuracy && pos.y >= pos2.y - inaccuracy && pos.x < pos2.x + WidthDice + inaccuracy && pos.y < pos2.y + HeightDice + inaccuracy;
     }
@@ -85,7 +85,7 @@ public:
     virtual Vector2f getPoint(size_t i) const { return m[i]; }
 };
 
-void swap(Dice& a, Dice& b) {
+void swap(Dice& a, Dice& b) { // обмен текстурами и идентификаторами
     int IdName = a.IdName;
     a.setTexture(&textures[b.IdName]);
     a.IdName = b.IdName;

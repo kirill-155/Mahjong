@@ -68,7 +68,6 @@ void Loss(RenderWindow& window) {
     text.setString(L"Поражение!");
     text.setCharacterSize(80);// выбираем размер символов в пикселях
     text.setFillColor(Color(255, 0, 0));// выбираем цвет
-    //text.setStyle(sf::Text::Bold | sf::Text::Underlined);// выбираем стиль текста
     text.setPosition(WidthWin / 2 - text.getGlobalBounds().width / 2 - 3, HeightWin / 2 - 150);
     window.draw(text);
 
@@ -220,17 +219,15 @@ void Drow(RenderWindow& window) {
 int main()
 {
     system("chcp 1251 > nul");// руссификация
+
     ContextSettings settings;
     settings.antialiasingLevel = 5;// уровень сглаживания
     RenderWindow window(VideoMode(WidthWin, HeightWin), L"Mahjong", Style::Default, settings);
     window.setPosition({ 200,100 });
     window.setVerticalSyncEnabled(true);
 
-    Image icon;
-    if (!icon.loadFromFile("Image/Icon.png"))
-    {
-        return 1;
-    }
+    Image icon; // иконка окна
+    if (!icon.loadFromFile("Image/Icon.png")) { return 1; }
     window.setIcon(48, 48, icon.getPixelsPtr());
 
     Music music;   // Music
@@ -242,8 +239,6 @@ int main()
     preloading();
     while (window.isOpen())
     {
-        //system("pause");
-
         window.clear(Color::Black);// очищаем окно чёрным цветом
 
         Event_click(window);// обработка событий

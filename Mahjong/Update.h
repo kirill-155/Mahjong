@@ -3,7 +3,7 @@
 #include "Dice.h"
 
 void Update(RenderWindow& window) {
-	for (int i = 0; i < V_dice.size(); i++)
+	for (int i = 0; i < V_dice.size(); i++) // прорисовка поля
 		window.draw(V_dice[i]);
 
     // создание кнопки рестарта

@@ -26,7 +26,7 @@ void Menu(RenderWindow& window) {
         BtnMenuExit.setPosition(WidthWin / 2 - widthBtn / 2, HeightWin / 2 - heightBtn / 2 - 125 + k++ * interval);
         k = 0;
     }
-    else
+    else // если пауза то можно продолжить
     {
         ++k;
         BtnMenuReStart.setPosition(WidthWin / 2 - widthBtn / 2, HeightWin / 2 - heightBtn / 2 - 125 + k++ * interval);

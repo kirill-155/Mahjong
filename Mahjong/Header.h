@@ -20,15 +20,15 @@ using std::ifstream;
 
 string status = "screensaver";
 
-const int WidthWin = 1600;
+const int WidthWin = 1600; // размеры окна
 const int HeightWin = 800;
 
-const int WidthDice = 64;
+const int WidthDice = 64; // размеры кости
 const int HeightDice = 84;
-const double ShiftLevel = 4;
-const double ShiftWidth = 300;
+const double ShiftLevel = 4; // сдвиг на слой выше
+const double ShiftWidth = 300; // сдвиг пол€ костей
 
-string FonWin = "Image/screensaver.jpg";
+string FonWin = "Image/screensaver.jpg"; // фон главного экрана
 string FontText = "Font/NT Somic/NT Somic-VF.ttf";// шрифт
 Font font;
 
@@ -40,18 +40,18 @@ vector<Dice> V_dice;// массив костей
 const int radReStart = 30;
 CircleShape ButReStart(radReStart);
 const int MenuWiHe = radReStart * 2;
-RectangleShape ButMenu(Vector2f(MenuWiHe, MenuWiHe));
+RectangleShape ButMenu(Vector2f(MenuWiHe, MenuWiHe)); // меню
 
 //  нопки меню
 const int widthBtn = 200, heightBtn = 40;
-RectangleShape BtnMenuPlay(Vector2f(widthBtn, heightBtn));
-RectangleShape BtnMenuReStart(Vector2f(widthBtn, heightBtn));
-RectangleShape BtnMenuMap(Vector2f(widthBtn, heightBtn));
-RectangleShape BtnMenuFon(Vector2f(widthBtn, heightBtn));
-RectangleShape BtnMenuDice(Vector2f(widthBtn, heightBtn));
-RectangleShape BtnMenuExit(Vector2f(widthBtn, heightBtn));
+RectangleShape BtnMenuPlay(Vector2f(widthBtn, heightBtn)); // продолжить
+RectangleShape BtnMenuReStart(Vector2f(widthBtn, heightBtn)); // заново
+RectangleShape BtnMenuMap(Vector2f(widthBtn, heightBtn)); // карты
+RectangleShape BtnMenuFon(Vector2f(widthBtn, heightBtn)); // фон
+RectangleShape BtnMenuDice(Vector2f(widthBtn, heightBtn)); // кости
+RectangleShape BtnMenuExit(Vector2f(widthBtn, heightBtn)); // выход
 
-void getTextureDice() {
+void getTextureDice() {// считываение текстур из файла
 	vector<string> Names;
 	ifstream in("Image/Name.txt");
 	if (in.is_open())
@@ -71,7 +71,7 @@ void getTextureDice() {
 	}
 }
 
-void preloading() {
+void preloading() { // предзагрузка
 	getTextureDice();
 
 	font.loadFromFile(FontText);
