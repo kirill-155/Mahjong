@@ -134,10 +134,11 @@
     <ClCompile Include="Mahjong.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CheckingForWin.h" />
     <ClInclude Include="Create.h" />
     <ClInclude Include="Dice.h" />
     <ClInclude Include="Header.h" />
-    <ClInclude Include="Screensaver.h" />
+    <ClInclude Include="Menu.h" />
     <ClInclude Include="Update.h" />
   </ItemGroup>
   <ItemGroup>

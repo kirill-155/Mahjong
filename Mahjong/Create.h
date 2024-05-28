@@ -1,31 +1,10 @@
 #pragma once
-#include <fstream>
 #include "Header.h"
 #include "Dice.h"
 
-void getTextureDice() {
-	vector<string> Names;
-	ifstream in("Image/Name.txt");
-	if(in.is_open())
-		while (!in.eof())
-		{
-			string Name;
-			in >> Name;
-			Names.push_back(Name);
-		}
-	in.close();
-
-	textures.resize(Names.size());
-	for (int i = 0; i < Names.size(); i++)
-	{
-		textures[i].loadFromFile("Image/Кости_белые/" + Names[i] + ".png");
-		textures[i].setSmooth(true);
-	}
-}
-
 void Create(RenderWindow& window, int map = 1) {
+	V_dice.clear();
 	srand(time(0));
-	getTextureDice();
 	ifstream in("Map/" + to_string(map) + ".txt");
 	bool f = 0;
 	if(in.is_open())
@@ -33,7 +12,7 @@ void Create(RenderWindow& window, int map = 1) {
 	{
 		Vector2f pos;
 		in >> pos.x >> pos.y;
-		int level, cnt;
+		int level, cnt = 0;
 		in >> level >> cnt;
 		for (int i = 0; i < cnt; i++)
 		{

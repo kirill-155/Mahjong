@@ -1,25 +1,47 @@
 ﻿  Mahjong.cpp
+C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Header.h(83,88): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Header.h(88,88): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Header.h(93,84): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Header.h(98,84): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Header.h(103,85): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Header.h(108,85): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
 C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Dice.h(17,39): warning C4305: инициализация: усечение из "double" в "float"
-C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Create.h(27,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Create.h(43,131): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
-C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Create.h(43,79): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
-C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Mahjong.cpp(40,119): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Create.h(7,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Create.h(22,131): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Create.h(22,79): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\CheckingForWin.h(16,119): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Mahjong.cpp(42,119): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\CheckingForWin.h(18,119): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Mahjong.cpp(59,24): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Mahjong.cpp(61,87): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Menu.h(22,101): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Menu.h(23,97): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Menu.h(24,97): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Menu.h(25,98): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Menu.h(26,98): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Menu.h(32,101): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Menu.h(33,97): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Menu.h(34,97): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Menu.h(35,98): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Menu.h(36,98): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Menu.h(41,135): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Menu.h(48,131): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Menu.h(54,131): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Menu.h(60,131): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Menu.h(66,131): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Menu.h(72,131): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Mahjong.cpp(146,28): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Mahjong.cpp(148,91): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Mahjong.cpp(61,66): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Mahjong.cpp(148,70): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
           with
           [
               T=float
