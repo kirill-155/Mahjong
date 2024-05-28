@@ -9,12 +9,12 @@ C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Dice.h(17,39): warn
 C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Create.h(7,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
 C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Create.h(22,131): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
 C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\Create.h(22,79): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
-C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\CheckingForWin.h(16,119): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\CheckingForWin.h(15,119): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\CheckingForWin.h(18,119): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+C:\Users\Кирилл\Documents\ЯрГУ\C++\Mahjong\Mahjong\CheckingForWin.h(17,119): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float

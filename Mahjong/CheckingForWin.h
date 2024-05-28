@@ -10,14 +10,12 @@ bool is_block(int IdV_dice) {
     bool left = 1, rigt = 1;
     for (int i = 0; i < V_dice.size(); i++)
     {
-        V_dice[i].setFillColor(Color(255, 255, 255));
-        if (V_dice[i].level - 1 == V_dice[IdV_dice].level && V_dice[i].is_click(Vector2f(pos.x, pos.y), 5))
+        if (V_dice[i].level - 1 == V_dice[IdV_dice].level && V_dice[i].is_click(Vector2f(pos.x, pos.y), 15))
             return true;
         if (left && V_dice[i].level == V_dice[IdV_dice].level && V_dice[i].is_click(Vector2f(pos.x + WidthDice, pos.y + ShiftLevel), 5))
             left = 0;
         if (rigt && V_dice[i].level == V_dice[IdV_dice].level && V_dice[i].is_click(Vector2f(pos.x - WidthDice, pos.y + ShiftLevel), 5))
             rigt = 0;
-        V_dice[i].setFillColor(Color(240, 240, 240));
     }
     if (left || rigt)
         return false;

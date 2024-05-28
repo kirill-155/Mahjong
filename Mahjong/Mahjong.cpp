@@ -226,9 +226,17 @@ int main()
     window.setPosition({ 200,100 });
     window.setVerticalSyncEnabled(true);
 
+    Image icon;
+    if (!icon.loadFromFile("Image/Icon.png"))
+    {
+        return 1;
+    }
+    window.setIcon(48, 48, icon.getPixelsPtr());
+
     Music music;   // Music
     if (!music.openFromFile("Music/Mao_Czje_Dun_-_Kitajjskijj_Kommunisticheskijj_Pesnya_10_social_credit_75521604.mp3")) { return -1; }
     music.setVolume(20.f);
+    music.setLoop(true);
     music.play();
 
     preloading();
